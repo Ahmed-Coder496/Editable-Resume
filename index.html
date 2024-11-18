@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Editable Resume Builder</title>
+</head>
+<body>
+    <div>
+        <form id="resume-form">
+          <h1>EDITABLE RESUME BUILDER</h1>
+          <fieldset>
+            
+            <legend>Please Give Your Information</legend>
+            <label>Name:</label>
+            <input id="Name" type="text" placeholder="Enter Your Name" required/>
+  
+            <label>E-Mail:</label>
+            <input id="Email" type="email" placeholder="Enter Your E-Mail" required/>
+  
+            <label>Phone Number:</label>
+            <input id="PhoneNumber" type="number" placeholder="Enter Your Phone Number" required/>
+  
+          </fieldset>
+  
+          <fieldset>
+  
+            <label>Projects:</label>
+            <textarea id="Projects" type="text" placeholder="Enter Your Projects" required></textarea>
+  
+          </fieldset>
+          
+          <fieldset>
+  
+            <label>Skills:</label>
+            <textarea id="Skills" type="text" placeholder="Enter Your Skills" required></textarea>
+  
+          </fieldset>
+  
+          <fieldset>
+  
+            <label>Youtube Channel Link:</label>
+            <input id="YoutubeChannel" type="url" placeholder="Enter Your Youtube Channel url" required/>
+  
+          </fieldset>
+  
+          <fieldset>
+  
+            <label>Instagram Channel Link:</label>
+            <input id="InstagramChannel" type="url" placeholder="Enter Your Instagram Channel url" required/>
+  
+          </fieldset>
+  
+          <fieldset>
+  
+            <label>Likedin Profile Link:</label>
+            <input id="LikedinProfile" type="url" placeholder="Enter Your Likedin Profile url" required/>
+  
+            </fieldset>
+  
+            <fieldset>
+  
+            <label>GitHub Prifile Link:</label>
+            <input id="GitHubprofile" type="url" placeholder="Enter Your GitHub profile url" required/>
+  
+            </fieldset>
+            
+            <button type="submit"><b>Resume Generate</b></button>
+        </form>
+
+        <br>
+
+        <div id="resume-display" contenteditable="true">
+          <!--Resume will Generated-->
+        </div>
+
+        <script src="script.js"></script>
+        
+        
+      </div>
+</body>
+</html>
